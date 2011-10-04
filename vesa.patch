@@ -1,0 +1,16 @@
+diff --git a/src/vesa.c b/src/vesa.c
+index ff0601c..b8eb644 100644
+--- a/src/vesa.c
++++ b/src/vesa.c
+@@ -716,6 +716,11 @@ VESAPreInit(ScrnInfoPtr pScrn, int flags)
+ 	xf86DrvMsg(pScrn->scrnIndex, X_WARNING,
+ 		"No valid modes left. Trying less strict filter...\n");
+ 	pVesa->strict_validation = FALSE;
++	/* Set monitor HorizSync and VertRefresh range */ 
++	pScrn->monitor->hsync[0].lo = 31.5;
++	pScrn->monitor->hsync[0].hi = 50;
++	pScrn->monitor->vrefresh[0].lo = 59;
++	pScrn->monitor->vrefresh[0].hi = 75;
+ 	i = VESAValidateModes(pScrn);
+     }
+ 

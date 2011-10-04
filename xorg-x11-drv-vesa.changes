@@ -1,0 +1,37 @@
+* Thu Jun 23 2010 Li Peng <peng.li@intel.com> - 2.3.0
+- Add %doc for man pages
+
+* Fri Feb 05 2010 Li Peng <peng.li@intel.com> - 2.3.0
+- 2.3.0
+
+* Fri Dec 4 2009 Arjan van de Ven <arjan@linux.intel.com> - 2.2.1
+- fix breakage; the DGAInit function no longer exists in X,
+  the whole DGA concept is gone
+
+* Thu Oct 29 2009 Li Peng <peng.li@intel.com> - 2.2.1
+- 2.2.1
+
+* Tue Sep 01 2009 Peng Li <peng.li@intel.com> 2.2.0
+- Add patch to support 1024x768 in virtual machine
+
+* Tue May 26 2009 Peng Li <peng.li@intel.com> 2.2.0
+- 2.2.0
+
+* Tue Dec 23 2008 Peng Li <peng.li@intel.com> 2.1.0
+- update to 2.1.0
+
+* Mon Dec 22 2008 Anas Nashif <anas.nashif@intel.com> 2.0.0
+- Added build requirement: inputproto
+
+* Fri Dec 19 2008 Arjan van de Ven <arjan@linux.intel.com> 2.0.0
+- Fix buildrequires
+
+* Tue Dec 16 2008 Anas Nashif <anas.nashif@intel.com> 2.0.0
+- Update spec file using latest spec-builder
+
+* Tue Dec 16 2008 Anas Nashif <anas.nashif@intel.com> 2.0.0
+- Update spec file using latest spec-builder
+
+* Fri Dec 12 2008 Peng Li <peng.li@intel.com> 2.0.0
+- use spec builder to reinit spec file
+

@@ -1,0 +1,16 @@
+--- xf86-video-vesa-2.2.1/src/vesa.c~	2009-12-04 14:29:36.000000000 -0800
++++ xf86-video-vesa-2.2.1/src/vesa.c	2009-12-04 14:29:36.000000000 -0800
+@@ -1826,12 +1826,5 @@
+ {
+     VESAPtr pVesa = VESAGetRec(pScrn);
+ 
+-    if (pScrn->depth < 8 || pVesa->mapPhys == 0xa0000L)
+-	return (FALSE);
+-
+-    if (!pVesa->nDGAMode)
+-	VESADGAAddModes(pScrn);
+-
+-    return (DGAInit(pScreen, &VESADGAFunctions,
+-	    pVesa->pDGAMode, pVesa->nDGAMode));
++    return FALSE;
+ }
