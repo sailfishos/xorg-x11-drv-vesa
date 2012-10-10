@@ -1,6 +1,8 @@
 Name: xorg-x11-drv-vesa
 Summary: Xorg X11 vesa video driver
-Version: 2.3.0
+Description: |
+  %{summary}.
+Version: 2.3.2
 Release: 1
 Group: System/X11 Hardware Support
 License: MIT
@@ -14,10 +16,11 @@ Patches:
 Requires:
     - xorg-x11-server-Xorg
 PkgConfigBR:
+    - xorg-macros >= 1.8
     - xorg-server >= 1.0.99.901
     - xproto
     - fontsproto
     - randrproto
     - renderproto
     - xextproto
-    - inputproto
+
